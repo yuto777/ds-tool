@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+</head>
+<body>
+    <h1>Sales Report</h1>
+    <ul>
+        {% for product in report %}
+            <li>{{ product.title }} - {{ product.price }} - Stock: {{ product.stock }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Back to Product Management</a>
+</body>
+</html>
