@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # サンプルのURLを指定（実際のURLに置き換えてください）
-URL = "https://example.com/products"
+URL = "https://www.monotaro.com/monotaroMain.py?func=monotaro.myPage.recentViewHistory.showListServlet.ShowListServlet"
 
 def scrape_products():
     response = requests.get(URL)

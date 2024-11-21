@@ -32,5 +32,11 @@ def scrape():
     scraped_data = scrape_products()  # スクレイピング
     return f'Scraped {len(scraped_data)} products!'
 
+@app.route("/debug/products")
+def debug_products():
+    from database import get_products
+    products = get_products()
+    return {"products": products}
+
 if __name__ == "__main__":
     app.run(debug=True)
